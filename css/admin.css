@@ -137,7 +137,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;  
+    padding: 0 10px;
 }
 
 .container .topbar .toggle {
@@ -189,7 +189,7 @@ section {
     cursor: pointer;
 }
 
-.container .topbar .perfil-usuario img{
+.container .topbar .perfil-usuario img {
     position: absolute;
     top: 0;
     left: 0;
@@ -209,7 +209,7 @@ section {
     grid-gap: 30px;
 }
 
-.cards .card{
+.cards .card {
     position: relative;
     background: var(--notification-success);
     padding: 30px;
@@ -221,11 +221,11 @@ section {
     transition: 0.4s;
 }
 
-.cards .card:hover{
+.cards .card:hover {
     background: var(--accent-green);
 }
 
-.cards .card .card-numeros{
+.cards .card .card-numeros {
     position: relative;
     font-weight: 700;
     font-size: 2.5em;
@@ -315,7 +315,7 @@ section {
     padding: 10px;
 }
 
-.detalles .ordenes-recientes table th:last-child, 
+.detalles .ordenes-recientes table th:last-child,
 .detalles .ordenes-recientes table tr td:last-child {
     text-align: end;
 }
@@ -340,18 +340,18 @@ section {
 }
 
 .estatus.devuelto {
-    background: rgba(227, 1, 1,0.3);
+    background: rgba(227, 1, 1, 0.3);
     color: #e30101;
 }
 
 .estatus.en-progreso {
     background: rgba(1, 155, 227, 0.3);
-    color:#019be3 ;
+    color: #019be3;
 }
 
 .estatus.entregado {
     background: rgba(141, 224, 44, 0.3);
-    color:#8de02c;
+    color: #8de02c;
 }
 
 .detalles .nuevos-clientes .imgBox {
@@ -374,4 +374,158 @@ section {
 .detalles .nuevos-clientes table tr:hover {
     background: var(--accent-green);
     color: var(--text-primary);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 15px;
+    }
+
+    .detalles {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .container .topbar .buscar {
+        width: 300px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .nav {
+        width: 80px;
+    }
+
+    .nav.active {
+        width: 300px;
+    }
+
+    .container {
+        width: calc(100% - 80px);
+        left: 80px;
+    }
+
+    .container.active {
+        width: calc(100% - 300px);
+        left: 300px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        grid-gap: 15px;
+    }
+
+    .cards .card {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .cards .card .card-nombre {
+        margin: 0;
+    }
+
+    .container .topbar {
+        flex-wrap: wrap;
+        height: auto;
+        min-height: 60px;
+        padding: 10px;
+    }
+
+    .container .topbar .buscar {
+        width: 100%;
+        order: 3;
+        margin: 10px 0 0 0;
+    }
+
+    .detalles {
+        padding: 10px;
+        grid-gap: 15px;
+    }
+
+    .detalles .ordenes-recientes,
+    .detalles .nuevos-clientes {
+        padding: 15px;
+        min-height: 300px;
+    }
+
+    .detalles table {
+        font-size: 0.8em;
+    }
+
+    .detalles .ordenes-recientes table th,
+    .detalles .ordenes-recientes table tr td {
+        padding: 8px 4px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Mobile pequeño */
+@media (max-width: 480px) {
+    .cards .card .card-numeros {
+        font-size: 2em;
+    }
+
+    .cards .card .card-icon {
+        font-size: 2.5em;
+    }
+
+    .detalles .ordenes-recientes table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .detalles .ordenes-recientes table th,
+    .detalles .ordenes-recientes table tr td {
+        white-space: nowrap;
+        min-width: 100px;
+    }
+
+    .detalles .nuevos-clientes table tr {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .detalles .nuevos-clientes .imgBox {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Ocultar elementos en móvil muy pequeño */
+@media (max-width: 320px) {
+    .container .topbar .perfil-usuario {
+        display: none;
+    }
+
+    .nav ul li a .titulo {
+        font-size: 0.9em;
+    }
+}
+
+/* Estilo para tablas responsivas */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Mejoras para accesibilidad */
+.nav ul li a:focus,
+.container .topbar .toggle:focus,
+.boton:focus {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
 }
