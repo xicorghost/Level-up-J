@@ -18,3 +18,8 @@
 con la extension live preview en el visual y funcionan los mensajes y las alertas 
 
 -Y si funciona las validaciones register.js 
+
+## Mas cosas del index.html 
+
+-tiene demasiado codigo y codigo inecesario 
+
