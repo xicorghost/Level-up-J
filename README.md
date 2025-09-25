@@ -1,20 +1,20 @@
-#  Admin
+#  Admin.html
 
 -Hacer responsiva la pagina del admin 
 
-## .html
+-falta terminar el Admin dashboard, esta incompleta
 
--La pagina del formulario no funciona en navegadores lo probe,
-con la extension live preview en el visual
-
--Y si funciona las validaciones register.js 
-
+## Index.html
 -En un futuro dar funcion a las reseñas
-
--falta terminar el Admin dashboard
 
 -arreglar el canjeo de puntos
 
 -darle funcion del boton de "mi perfil"
 
 -darle funcion al boton de las noticias y guias y consejos
+
+## Form.html
+-La pagina del formulario no funciona en navegadores lo probe,
+con la extension live preview en el visual y funcionan los mensajes y las alertas 
+
+-Y si funciona las validaciones register.js 
