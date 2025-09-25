@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+:root {
+    --primary-bg: #000000;
+    --accent-blue: #1E90FF;
+    --accent-green: #39FF14;
+    --text-primary: #FFFFFF;
+    --text-secondary: #D3D3D3;
+    --notification-success: #00FF88;
+    --notification-error: #FF3366;
+    --notification-warning: #FFD700;
+    --notification-info: #00BFFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--primary-bg);
+    background-size: cover;
+}
+
+.container-form {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.5);
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease;
+    margin: 10px;
+}
+
+.information {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-green));
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.info-childs {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.info-childs h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.info-childs p {
+    margin: 15px 0;
+    color: var(--primary-bg);
+}
+
+.info-childs input {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px var(--accent-blue) !important;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--primary-bg);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info-childs input:hover {
+    background-color: var(--notification-info);
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    background-color: #1a1a1a;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.form-information-childs h2 {
+    color: var(--accent-blue) !important;
+    font-size: 2rem;
+}
+
+.form-information-childs p {
+    color: var(--accent-blue);
+}
+
+.form-information-childs {
+    padding: 0 30px;
+}
+
+.icons {
+    margin: 15px;
+}
+
+.icons i {
+    border-radius: 50%;
+    padding: 15px;
+    border: solid thin var(--accent-blue);
+    cursor: pointer;
+    margin: 0 10px;
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.5);
+    color: var(--accent-blue);
+    transition: background-color 0.3s ease;
+}
+
+.icons i:hover {
+    background-color: var(--notification-info);
+    color: #fff;
+}
+
+.form {
+    margin: 30px 0 0 0;
+}
+
+.form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #333;
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.2) !important;
+}
+
+.form label input {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: var(--text-primary);
+}
+
+.form label i {
+    color: var(--accent-blue)
+}
+
+.form input[type="submit"] {
+    background-color: var(--notification-success);
+    color: var(--primary-bg);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.2)
+}
+
+.form input[type="submit"]:hover {
+    background-color: var(--accent-blue);
+    color: var(--text-primary);
+}
+
+.hide {
+    position: absolute;
+    transform: translateY(-300%);
+}
+
+/*Personalizacion de mis alertas y mensajes*/
+.form div .alerta {
+    width: 100%;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+}
+
+.form>.alerta-error,
+.form>.alerta-exito {
+    display: none;
+    border-radius: 7px;
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: .8rem;
+    padding: .3rem;
+    text-align: center;
+}
+/* 
+.form .alerta-error {
+    display: block;
+    background-color: var(--notification-error);
+    padding: .3rem 8rem;
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: .6rem;
+    color: #fff;
+}
+
+.form .alerta-exito {
+    display: block;
+    background-color: var(--accent-green);
+    padding: .3rem 8rem;
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: .6rem;
+    color: #000;
+}
+*/
+/* Cuando JS los active */
+.form > .alerta-error.activa {
+    display: block;
+    background-color: var(--notification-error);
+    color: #fff;
+}
+
+.form > .alerta-exito.activa {
+    display: block;
+    background-color: var(--accent-green);
+    color: #000;
+}
+
+.form .error {
+    outline: solid 2px #9d2222;
+}
+
+/* Mensaje de error debajo de inputs */
+.form div .alerta.error {
+    color: var(--notification-error); /* rojo */
+    font-weight: bold;
+}
+
+/* Mensaje de validación correcta */
+.form div .alerta.valido {
+    color: var(--notification-success); /* verde */
+    font-weight: bold;
+}
+
+
+/*forma responsiva*/
+@media screen and (max-width:750px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    html {
+        font-size: 15px;
+    }
+
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .information {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .form-information {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+    }
+}

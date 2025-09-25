@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos css  -->
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Admin Dashboard</title>
+
+
+</head>
+
+<body>
+
+    <section>
+        <!-- MENU  -->
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icono"><ion-icon name="aperture"></ion-icon></span>
+                        <span class="titulo">LOGO</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icono"><ion-icon name="home"></ion-icon></span>
+                        <span class="titulo">DASHBOARD</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icono"><ion-icon name="person"></ion-icon></span>
+                        <span class="titulo">CLIENTES</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icono"><ion-icon name="cart"></ion-icon></span>
+                        <span class="titulo">VENTAS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icono"><ion-icon name="help-circle"></ion-icon></span>
+                        <span class="titulo">AYUDA</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icono"><ion-icon name="settings"></ion-icon></span>
+                        <span class="titulo">CONFIGURACIÓN</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icono"><ion-icon name="log-out"></ion-icon></span>
+                        <span class="titulo">CERRAR SESIÓN</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- FIN MENU   -->
+
+        <!--DASHBOARD -->
+
+        <div class="container">
+            <!-- Barra superior (topbar)  -->
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+                <div class="buscar">
+                    <label for="">
+                        <input type="text" placeholder="Buscar..." name="" id="">
+                        <ion-icon name="search"></ion-icon>
+                    </label>
+                </div>
+                <div class="perfil-usuario">
+                    <img src="img/cat_weed.png" alt="">
+                </div>
+            </div>
+
+            <!-- FIN DE LA Barra superior (topbar)  -->
+
+            <!-- cards  -->
+            <div class="cards">
+                <div class="card">
+
+                    <div>
+                        <span class="card-numeros">2,345</span>
+                        <span class="card-nombre">Visitas</span>
+                    </div>
+                    <div class="card-icon">
+                        <ion-icon name="eye"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <span class="card-numeros">1,342</span>
+                        <span class="card-nombre">Ventas</span>
+                    </div>
+                    <div class="card-icon">
+                        <ion-icon name="card"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <span class="card-numeros">475</span>
+                        <span class="card-nombre">Mensajes</span>
+                    </div>
+                    <div class="card-icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <span class="card-numeros">$6,879</span>
+                        <span class="card-nombre">Ganancias</span>
+                    </div>
+                    <div class="card-icon">
+                        <ion-icon name="trending-up"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIN cards  -->
+            <div class="detalles">
+                <!--Ordenes recientes-->
+                <div class="ordenes-recientes">
+                    <div class="header">
+                        <h2>Órdenes recientes</h2>
+                        <a href="#" class="boton">Ver todos</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Pago</th>
+                            <th>Estatus</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monopoly</td>
+                                <td>$19.990</td>
+                                <td>Pendiente</td>
+                                <td><span class="estatus pendiente">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td>Consola PlayStation 5</td>
+                                <td>$549.990</td>
+                                <td>Pagado</td>
+                                <td><span class="estatus devuelto">Devuelto</span></td>
+                            </tr>
+                            <tr>
+                                <td>PC Gamer ASUS ROG Strix</td>
+                                <td>$1.299.990</td>
+                                <td>Pendiente</td>
+                                <td><span class="estatus en-progreso">En progreso</span></td>
+                            </tr>
+                            <tr>
+                                <td>Silla Gamer Secretlab Titan</td>
+                                <td>$349.990</td>
+                                <td>Pagado</td>
+                                <td><span class="estatus pendiente">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td>Polera Personalizada 'TOY-CURAO'</td>
+                                <td>$14.990</td>
+                                <td>Pagado</td>
+                                <td><span class="estatus entregado">Entregado</span></td>
+                            </tr>
+                            <tr>
+                                <td>Controlador Inalámbrico Xbox Series X'</td>
+                                <td>$59.990</td>
+                                <td>Pendiente</td>
+                                <td><span class="estatus en-progreso">En progreso</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Fin de ordenes recientes -->
+
+                <!--Nuevos clientes-->
+                <div class="nuevos-clientes">
+                    <div class="header">
+                        <h2>Nuevos Clientes</h2>
+
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="imgBox"><img src="img/corxea.png" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Corxea Chanpuru</h4>
+                            </td>
+                            <td>
+                                <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon></a>
+                                <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+                                <a href="#"><ion-icon name="mail-outline"></ion-icon></ion-icon></a>
+                            </td>
+                            <td>
+                                <div class="imgBox"><img src="img/jueves.png" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Wacoldo Diógenes</h4>
+                            </td>
+                            <td>
+                                <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon></a>
+                                <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+                                <a href="#"><ion-icon name="mail-outline"></ion-icon></ion-icon></a>
+                            </td>
+                            <td>
+                                <div class="imgBox"><img src="img/pascal.png" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>El Pascal</h4>
+                            </td>
+                            <td>
+                                <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon></a>
+                                <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+                                <a href="#"><ion-icon name="mail-outline"></ion-icon></ion-icon></a>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+
+                <!--Fin de nuevos clientes-->
+            </div>
+            <!--Fin de detalles-->
+        </div>
+        <!--Fin dashboard-->
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/admin.js"></script>
+</body>
+
+</html>
