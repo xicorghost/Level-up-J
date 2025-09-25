@@ -324,176 +324,144 @@
             </div>
         </div>
 
-    <!-- Sección de Blog/Comunidad -->
-    <section class="blog-section" id="blog" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
-        <h2 class="orbitron text-center mb-5"
-            style="background: linear-gradient(45deg, var(--accent-blue), var(--accent-green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-            Gaming Blog & Comunidad</h2>
+        <!-- Sección de Blog/Comunidad -->
+        <section class="blog-section" id="blog" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
+            <h2 class="orbitron text-center mb-5"
+                style="background: linear-gradient(45deg, var(--accent-blue), var(--accent-green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                Gaming Blog & Comunidad</h2>
 
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="blog-card"
-                    style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(30, 144, 255, 0.2); border-radius: 15px; padding: 20px; height: 100%;">
-                    <h5 class="text-primary mb-3">🎮 Últimas Noticias Gaming</h5>
-                    <p class="text-secondary">Mantente al día con las últimas novedades del mundo gamer, lanzamientos de
-                        juegos y tecnología.</p>
-                    <a href="#" class="btn btn-outline-gaming btn-sm">Leer Más</a>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="blog-card"
-                    style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(30, 144, 255, 0.2); border-radius: 15px; padding: 20px; height: 100%;">
-                    <h5 class="text-primary mb-3">💡 Guías y Consejos</h5>
-                    <p class="text-secondary">Aprende trucos, configuraciones y estrategias para mejorar tu experiencia
-                        gaming.</p>
-                    <a href="#" class="btn btn-outline-gaming btn-sm">Ver Guías</a>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="blog-card"
-                    style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(30, 144, 255, 0.2); border-radius: 15px; padding: 20px; height: 100%;">
-                    <h5 class="text-primary mb-3">🗺️ Eventos Gaming</h5>
-                    <p class="text-secondary">Descubre eventos y torneos cerca de ti donde puedes ganar puntos LevelUp.
-                    </p>
-                    <button class="btn btn-outline-gaming btn-sm" data-bs-toggle="modal" data-bs-target="#mapModal">
-                        Ver Mapa
-                    </button>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Cart Sidebar -->
-    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
-    <div class="cart-sidebar" id="cartSidebar">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h4 class="orbitron text-primary">Tu Carrito</h4>
-            <button class="btn btn-outline-danger btn-sm" onclick="toggleCart()">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-
-        <div id="cartItems">
-            <p class="text-secondary text-center mt-5">Tu carrito está vacío</p>
-        </div>
-
-        <div class="mt-4 pt-3 border-top border-secondary">
-            <div class="d-flex justify-content-between mb-3">
-                <strong>Total: </strong>
-                <strong class="text-primary" id="cartTotal">$0 CLP</strong>
-            </div>
-            <button class="btn btn-gaming w-100 mb-2" onclick="checkout()">
-                <i class="fas fa-credit-card me-2"></i>Finalizar Compra
-            </button>
-            <button class="btn btn-outline-danger w-100" onclick="clearCart()">
-                <i class="fas fa-trash me-2"></i>Vaciar Carrito
-            </button>
-        </div>
-    </div>
-
-    <!-- Login Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title orbitron">Iniciar Sesión</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="loginForm">
-                        <div class="mb-3">
-                            <input type="email" class="form-control" id="loginEmail" placeholder="Correo electrónico"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" class="form-control" id="loginPassword" placeholder="Contraseña"
-                                required>
-                        </div>
-                        <button type="submit" class="btn btn-gaming w-100">Ingresar</button>
-                    </form>
-                    <div class="text-center mt-3">
-                        <p class="text-secondary">¿No tienes cuenta? <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#registerModal" data-bs-dismiss="modal"
-                                style="color: var(--accent-green);">Regístrate aquí</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h5 class="orbitron mb-3">Level-Up Gamer</h5>
-                    <p class="text-secondary">Tu tienda gamer de confianza en Chile. Productos de calidad para la
-                        comunidad gamer más exigente.</p>
-                    <div class="mt-3">
-                        <a href="https://wa.me/56912345678" class="btn btn-outline-gaming btn-sm me-2">
-                            <i class="fab fa-whatsapp me-1"></i>Soporte Técnico
-                        </a>
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card"
+                        style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(30, 144, 255, 0.2); border-radius: 15px; padding: 20px; height: 100%;">
+                        <h5 class="text-primary mb-3">🎮 Últimas Noticias Gaming</h5>
+                        <p class="text-secondary">Mantente al día con las últimas novedades del mundo gamer,
+                            lanzamientos de
+                            juegos y tecnología.</p>
+                        <a href="#" class="btn btn-outline-gaming btn-sm">Leer Más</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <h6 class="mb-3">Categorías</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-secondary text-decoration-none">Consolas</a></li>
-                        <li><a href="#" class="text-secondary text-decoration-none">PC Gamers</a></li>
-                        <li><a href="#" class="text-secondary text-decoration-none">Accesorios</a></li>
-                        <li><a href="#" class="text-secondary text-decoration-none">Juegos de Mesa</a></li>
-                        <li><a href="#" class="text-secondary text-decoration-none">Servicio Técnico</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h6 class="mb-3">Síguenos</h6>
-                    <div class="d-flex">
-                        <a href="https://www.instagram.com/" class="text-secondary me-3"><i
-                                class="fab fa-instagram fa-2x"></i></a>
-                        <a href="https://x.com/?lang=es" class="text-secondary me-3"><i
-                                class="fab fa-twitter fa-2x"></i></a>
-                        <a href="https://discord.com/" class="text-secondary me-3"><i
-                                class="fab fa-discord fa-2x"></i></a>
-                        <a href="https://www.twitch.tv/" class="text-secondary me-3"><i
-                                class="fab fa-twitch fa-2x"></i></a>
+
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card"
+                        style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(30, 144, 255, 0.2); border-radius: 15px; padding: 20px; height: 100%;">
+                        <h5 class="text-primary mb-3">💡 Guías y Consejos</h5>
+                        <p class="text-secondary">Aprende trucos, configuraciones y estrategias para mejorar tu
+                            experiencia
+                            gaming.</p>
+                        <a href="#" class="btn btn-outline-gaming btn-sm">Ver Guías</a>
                     </div>
-                    <div class="mt-3">
-                        <a href="https://optijuegos.net/" target="_blank" class="text-secondary text-decoration-none">
-                            <i class="fas fa-gamepad me-2"></i>Optigames
-                        </a>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card"
+                        style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(30, 144, 255, 0.2); border-radius: 15px; padding: 20px; height: 100%;">
+                        <h5 class="text-primary mb-3">🗺️ Eventos Gaming</h5>
+                        <p class="text-secondary">Descubre eventos y torneos cerca de ti donde puedes ganar puntos
+                            LevelUp.
+                        </p>
+                        <button class="btn btn-outline-gaming btn-sm" data-bs-toggle="modal" data-bs-target="#mapModal">
+                            Ver Mapa
+                        </button>
+
                     </div>
                 </div>
             </div>
-            <hr class="my-4" style="border-color: rgba(30, 144, 255, 0.3);">
-            <section class="comunidad-impacto text-center my-5">
-                <h3 class="orbitron">Impacto Comunitario</h3>
-                <p class="text-secondary">Tus compras ayudan a financiar torneos gamers locales y apoyar comunidades en
-                    Chile.</p>
-            </section>
+        </section>
 
-            <div class="text-center text-secondary">
-                <p>&copy; 2025 Level-Up Gamer. Todos los derechos reservados.</p>
-                <p>Desafía tus límites con Level-Up Gamer - ¡Conviértete en el héroe de tu propia historia!</p>
+
+        <!-- Cart Sidebar -->
+        <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+        <div class="cart-sidebar" id="cartSidebar">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="orbitron text-primary">Tu Carrito</h4>
+                <button class="btn btn-outline-danger btn-sm" onclick="toggleCart()">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
 
+            <div id="cartItems">
+                <p class="text-secondary text-center mt-5">Tu carrito está vacío</p>
+            </div>
+
+            <div class="mt-4 pt-3 border-top border-secondary">
+                <div class="d-flex justify-content-between mb-3">
+                    <strong>Total: </strong>
+                    <strong class="text-primary" id="cartTotal">$0 CLP</strong>
+                </div>
+                <button class="btn btn-gaming w-100 mb-2" onclick="checkout()">
+                    <i class="fas fa-credit-card me-2"></i>Finalizar Compra
+                </button>
+                <button class="btn btn-outline-danger w-100" onclick="clearCart()">
+                    <i class="fas fa-trash me-2"></i>Vaciar Carrito
+                </button>
+            </div>
         </div>
 
-    </footer>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="orbitron mb-3">Level-Up Gamer</h5>
+                        <p class="text-secondary">Tu tienda gamer de confianza en Chile. Productos de calidad para la
+                            comunidad gamer más exigente.</p>
+                        <div class="mt-3">
+                            <a href="https://wa.me/56912345678" class="btn btn-outline-gaming btn-sm me-2">
+                                <i class="fab fa-whatsapp me-1"></i>Soporte Técnico
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="mb-3">Categorías</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-secondary text-decoration-none">Consolas</a></li>
+                            <li><a href="#" class="text-secondary text-decoration-none">PC Gamers</a></li>
+                            <li><a href="#" class="text-secondary text-decoration-none">Accesorios</a></li>
+                            <li><a href="#" class="text-secondary text-decoration-none">Juegos de Mesa</a></li>
+                            <li><a href="#" class="text-secondary text-decoration-none">Servicio Técnico</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="mb-3">Síguenos</h6>
+                        <div class="d-flex">
+                            <a href="https://www.instagram.com/" class="text-secondary me-3"><i
+                                    class="fab fa-instagram fa-2x"></i></a>
+                            <a href="https://x.com/?lang=es" class="text-secondary me-3"><i
+                                    class="fab fa-twitter fa-2x"></i></a>
+                            <a href="https://discord.com/" class="text-secondary me-3"><i
+                                    class="fab fa-discord fa-2x"></i></a>
+                            <a href="https://www.twitch.tv/" class="text-secondary me-3"><i
+                                    class="fab fa-twitch fa-2x"></i></a>
+                        </div>
+                        <div class="mt-3">
+                            <a href="https://optijuegos.net/" target="_blank"
+                                class="text-secondary text-decoration-none">
+                                <i class="fas fa-gamepad me-2"></i>Optigames
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4" style="border-color: rgba(30, 144, 255, 0.3);">
+                <section class="comunidad-impacto text-center my-5">
+                    <h3 class="orbitron">Impacto Comunitario</h3>
+                    <p class="text-secondary">Tus compras ayudan a financiar torneos gamers locales y apoyar comunidades
+                        en
+                        Chile.</p>
+                </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
+                <div class="text-center text-secondary">
+                    <p>&copy; 2025 Level-Up Gamer. Todos los derechos reservados.</p>
+                    <p>Desafía tus límites con Level-Up Gamer - ¡Conviértete en el héroe de tu propia historia!</p>
+                </div>
 
-    <script>
-        // Función para mostrar mapa de eventos (simulado)
-        function showEventMap() {
-            showNotification('Próximamente: Mapa interactivo de eventos gaming en Chile', 'info');
-        }
-    </script>
+            </div>
+
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+
 
 </body>
 
