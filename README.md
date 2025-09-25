@@ -1,7 +1,6 @@
 #  lol
 
-## Lo que falta 
+## form.html
 
--GSGDGDGD
-
--
+-La pagina del formulario no funciona en navegadores lo probe,
+con la extension live preview en el visual
